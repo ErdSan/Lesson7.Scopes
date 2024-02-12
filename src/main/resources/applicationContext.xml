@@ -11,7 +11,8 @@
           class="ru.erdyneev.springcourse.ClassicalMusic">
     </bean>
     <bean id="musicPlayer"
-          class="ru.erdyneev.springcourse.MusicPlayer">
+          class="ru.erdyneev.springcourse.MusicPlayer"
+          scope="prototype">
         <property name="music" ref="musicBean"/>
 
         <property name="name" value="${musicPlayer.name}"/>
